@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+</head>
+<body>
+    <script>
+        let time=+prompt("Enter time:");
+        let hours=prompt("Enter am or pm:")
+        if( time >=1 &&time <= 12 && hours==="am"){
+            console.log("Good Morning!");
+        }
+        else if(time >=12 && time <=15 && hours==="pm"){
+            console.log("Good Noon!");
+        }
+        else if(time >=16 && time<=18&& hours==="pm"){
+            console.log("Good Evening");
+            
+        }
+        else if(time>=19 && time<=24 &&hours==="pm"){
+            console.log("Good night");
+            
+        }
+    </script>
+</body>
+</html>
