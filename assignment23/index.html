@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum and Product of Array</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let n = +prompt("Enter the number of elements in the array:");
+        for (let i = 0; i < n; i++) {
+            let num = +prompt(`Enter element:`);
+            arr.push(num); 
+        }
+        let sum = 0;
+        let product = 1;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];  
+            product *= arr[i]; 
+        }
+        document.write(`Sum: ${sum}<br>`);
+        document.write(`Product: ${product}`);
+    </script>
+</body>
+</html>
