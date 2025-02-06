@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmnet 25</title>
+</head>
+<body>
+        <script>
+        let arr = [];
+        let n = Number(prompt("Enter number of pair: "));
+        let size = 2 * n;
+        for (let i = 0; i < size; i++) {
+            arr[i] = Number(prompt("Enter element " + (i + 1) + ": "));
+        }
+        let sum = 0;
+        for (let i = 0; i < size; i += 2) {
+            let min = arr[i];
+            if (arr[i + 1] < min) {
+                min = arr[i + 1];
+            }
+            sum += min;
+        }
+        document.write("Sum of min(ai, bi): " + sum);
+    </script>
+</body>
+</html>
