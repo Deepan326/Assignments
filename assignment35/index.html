@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 35</title>
+</head>
+<body>
+    <script>
+        // let str=prompt("Enter input");
+        // let remove=prompt("Which want to trim");
+        // let resultSpace;
+        // let resultQuestion;
+        // if(remove==="?"){
+        //     resultSpace=str.replace(/\?/g,"");
+        //     console.log(resultSpace);   
+        // }
+        // else if(remove==="space"){
+        //     resultQuestion=str.replace(/\s/g,"");
+        //     console.log(resultQuestion);    
+        // }
+
+
+   
+let str = prompt("Enter input:");
+let remove = prompt("What do you want to trim");
+
+function removed(str, remove) {
+    if (remove === "?") {
+        return str.replace(/\?/g, "");
+    } else if (remove === "space") {
+        return str.replace(/\s/g, "");
+    } 
+}
+
+let result = removed(str, remove);
+console.log(result);
+
+        
+    </script>
+</body>
+</html>
