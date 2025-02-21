@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 36</title>
+</head>
+<body>
+    <script>
+        let val=+prompt("Enter a input");
+         let factorize=[];
+        for(let i=1;i<=val;i++){
+            if(val % i===0){
+            factorize.push(i)
+            }
+        }
+        document.write(`Factors of ${val}are:,${factorize}`);
+        
+    </script>
+</body>
+</html>
