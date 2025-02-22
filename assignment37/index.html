@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 37</title>
+</head>
+<body>
+    <script>
+        let employeeObj={
+            name:"raghunath",
+            empld:"001",
+            empSalary:"1000",
+            deptName:"WSA"
+        };
+    console.log(employeeObj);
+
+    console.log(`Length of the Employee object: ${Object.keys(employeeObj).length}`);
+    
+    let newEmployeeObj = { ...employeeObj };
+    delete newEmployeeObj.deptName;
+    console.log("deptName deleted", newEmployeeObj); 
+    </script>
+</body>
+</html>
