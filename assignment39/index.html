@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Example</title>
+</head>
+<body>
+    <h1>Person Details Using Prototype</h1>
+    <script>
+        // Step 1: Create the person object
+        const person = {
+            firstName: "Rohan",
+            age: 24,
+            phoneNumber: 9123456789
+        };
+
+        // Step 2: Add lastName property using prototype
+        Object.prototype.lastName = "A H";
+
+        // Step 3: Add details for mother and father
+        Object.prototype.getParents = function() {
+            return {
+                mother: {
+                    firstName: "Sita",
+                    lastName: this.lastName
+                },
+                father: {
+                    firstName: "Ramesh",
+                    lastName: this.lastName
+                }
+            };
+        };
+
+        // Step 4: Display details
+        document.write(`<strong>First Name:</strong> ${person.firstName}<br>`);
+        document.write(`<strong>Last Name:</strong> ${person.lastName}<br>`);
+        document.write(`<strong>Age:</strong> ${person.age}<br>`);
+        document.write(`<strong>Phone Number:</strong> ${person.phoneNumber}<br>`);
+
+        // Get parent details
+        const parents = person.getParents();
+        document.write(`<strong>Mother's Name:</strong> ${parents.mother.firstName} ${parents.mother.lastName}<br>`);
+        document.write(`<strong>Father's Name:</strong> ${parents.father.firstName} ${parents.father.lastName}<br>`);
+    </script>
+</body>
+</html>
