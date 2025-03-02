@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 41(c)</title>
+</head>
+<body>
+    <h1>The Area of Traingle</h1>
+    <div id="result"></div>
+    <script>
+        let a=+prompt("Enter side 1");
+        let b=+prompt("Enter side 2");
+        let c=+prompt("Enter side 3");
+        let s = (a+b+c)/2;
+console.log(s);
+
+       
+        let Area=Math.sqrt(s * (s - a) * (s - b) * (s - c));
+        document.getElementById("result").innerHTML = `Area of Triangle = ${Area}`;
+       
+    </script>
+</body>
+</html>
