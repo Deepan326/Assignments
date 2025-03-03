@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 42</title>
+    <style>
+        .highlight{
+            font-family:"Jost";
+            color: blue;
+            font-size: larger;
+            font-weight: 600;
+        }
+        .high{
+            border:2px dashed blue
+        }
+    </style>
+</head>
+<body>
+ <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore numquam porro consectetur saepe illum perferendis inventore ratione excepturi! Accusantium architecto, iusto incidunt nemo quos cupiditate perferendis veritatis suscipit laudantium autem!
+    amet consectetur adipisicing elit. Dolore numquam porro consectetur saepe illum perferendis inventore ratione excepturi! Accusantium architecto, iusto incidunt nemo quos cupiditate perferendis
+ </p>
+<button id="font" >Change Font</button>
+<button id="border">Border image</button>
+
+<script>
+    
+    document.getElementById("font")
+    .addEventListener("click",function(){
+       let style = document.getElementById("para")
+        style.classList.add("highlight")
+    })
+    document.getElementById("border")
+    .addEventListener("click",function(){
+       let border=document.getElementById("para")
+       border.classList.add("high")
+
+    })
+</script>
+</body>
+</html>
