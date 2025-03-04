@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>   
+#photo {
+    width: 400px;  
+    height: 400px;   
+}
+#photo:hover{
+    width: 200px;    
+    height: 200px;     
+}
+
+ </style>
+</head>
+<body>
+    <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/hills-1654858278_7b92d3212507d791119d.webp"  alt="Hill image" id="photo"
+        >
+    <p>Move your mouse pointer into and out of this element</p>
+
+    <script>
+          let mouseImg=document.getElementById("photo")
+        mouseImg.addEventListener("mouseover", function () {
+            mouseImg.src ="https://img.freepik.com/free-vector/abstract-minimalist-landscape-design-background_1048-20308.jpg" 
+            mouseImg.alt = "Mountain"; 
+        });
+        let orginalImage=document.getElementById("photo")
+            orginalImage.addEventListener("mouseleave", function () {
+            orginalImage.src ="https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/hills-1654858278_7b92d3212507d791119d.webp"
+        
+        });
+        </script>
+</body>
+</html>
