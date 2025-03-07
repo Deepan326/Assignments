@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 45</title>
+</head>
+<body>
+    <a id="myLink"
+       href="https://www.google.com" 
+       hreflang="en-us" 
+       rel="nofollow" 
+       target="_self" 
+       type="text/html">
+      Google
+    </a>
+    <br>
+    <br>
+    <script>    
+           function displayAttributes() {
+            const link = document.getElementById('myLink');
+            document.write('The value of the href attribute of the link is: ' + link.getAttribute('href') + '<br>');
+            document.write('The value of the hreflang attribute of the link is: ' + link.getAttribute('hreflang') + '<br>');
+            document.write('The value of the rel attribute of the link is: ' + link.getAttribute('rel') + '<br>');
+            document.write('The value of the target attribute of the link is: ' + link.getAttribute('target') + '<br>');
+            document.write('The value of the type attribute of the link is: ' + link.getAttribute('type') + '<br>');
+        }
+        displayAttributes();
+    </script>
+</body>
+</html>
