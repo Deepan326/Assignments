@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 44</title>
+    <style>
+    .change-font{
+        font-family: cursive;
+    
+    }
+    .change-size{
+        font-size: larger;
+    }
+    .change-color{
+        color: aqua;
+    }
+</style>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore numquam porro consectetur saepe illum perferendis inventore ratione excepturi! Accusantium architecto, iusto incidunt nemo quos cupiditate perferendis veritatis suscipit laudantium autem!
+        amet consectetur adipisicing elit. Dolore numquam porro consectetur saepe illum perferendis inventore ratione excepturi! Accusantium architecto, iusto incidunt nemo quos cupiditate perferendis
+     </p>
+    <button id="font" >Change Font</button>
+    <button id="border">Font size</button>
+    <button id="color">change color</button>
+
+    <script>  
+        document.getElementById("font")
+        .addEventListener("click",function(){
+           let style = document.getElementById("para")
+            style.classList.add("change-font")
+        })
+        document.getElementById("border")
+        .addEventListener("click",function(){
+           let border=document.getElementById("para")
+           border.classList.add("change-size")
+        })
+        document.getElementById("color")
+        .addEventListener("click",function(){
+           let color=document.getElementById("para")
+           color.classList.add("change-color")
+        })
+    </script>
+</body>
+</html>
