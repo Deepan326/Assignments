@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 46</title>
+</head>
+<body>
+    <label for="states">Dropdown List:</label>
+    <select id="states">
+        <option class="li" value="Karnataka">Karnataka</option>
+        <option class="li" value="Kerala">Kerala</option>
+        <option class="li" value="Tamilnadu">Tamilnadu</option>
+        <option class="li" value="Telangana">Telangana</option>
+        <option class="li" value="UP">UP</option>
+    </select>
+    <button onclick="deleteSelected()">Delete</button>
+
+    <script>
+        const dropdown = document.getElementById("states");
+        alert(`Number of items in the list: ${dropdown.options.length}`);
+        const listItems = Array.from(dropdown.options).map(option => option.text);
+        alert(`Dropdown List: ${listItems.join(', ')}`);
+        dropdown.value = "Kerala";
+
+        function deleteSelected() {
+            const selectedText = dropdown.options[dropdown.selectedIndex].text;
+            dropdown.remove(dropdown.selectedIndex);
+
+            const updatedList = Array.from(dropdown.options).map(option => option.text);
+           alert(`Deleted Dropdown list: ${updatedList.join(', ')}`);
+        }
+    </script>
+</body>
+</html>
