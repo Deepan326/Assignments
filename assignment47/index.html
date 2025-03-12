@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 47</title>
+    <style>
+        .para1{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .para2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .para3{
+            display: flex;
+            justify-content: right;
+            align-items:right;
+        }
+    </style>
+</head>
+<body>
+   <p>
+    Lorem ipsum dolor sit amet  incidunt  quod voluptates officia officia nulla. Culpa cumque perferendis vel, nisi tempore pariatur, repellendus blanditiis ipsam nemo dolor accusamus eum similique aliquid.
+    </p>
+    <p>
+    Dolorem similique porro  eum in minima iure harum sint. Saepe laborum ab soluta vel libero temporibus perferendis et labore sunt rem inventore, similique officia?
+    </p>
+    <p>
+     Similique, nam quaerat rerum, quod voluptates officia culpa reprehenderit vitae ullam dolore dicta nulla.</p>
+    </p>
+    <button id="clicked1" >Left</button>
+    <button id="clicked2">center</button>
+    <button id="clicked3">Right</button>
+    <script>
+        document.getElementById("clicked1")
+        .addEventListener("click",function(){
+            let para1=document.getElementsByTagName("p")[0]
+            para1.classList.add("para1");
+        })
+
+        document.getElementById("clicked2")
+        .addEventListener("click",function(){
+            let para2=document.getElementsByTagName("p")[1]
+            para2.classList.add("para2");
+        })
+
+        document.getElementById("clicked3")
+        .addEventListener("click",function(){
+            let para3=document.getElementsByTagName("p")[2]
+            para3.classList.add("para3");
+        })
+    </script>
+    
+</body>
+</html>
