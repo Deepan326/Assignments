@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 48</title>
+    <style>
+        .red{
+            color: aqua;
+            background-color: grey;
+            
+        }
+        .green{
+            color: lightpink;
+            background-color: lightyellow;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            align-content: flex-end;
+        }
+        .yellow{
+            color: lightcoral;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="color1" >
+    Lorem, ipsum dolor sit consectetur adipisicing elit. Omnis, dolores fugiat, mollitia dolor  amet consectetur adipisicing elit. Omnis, dolores fugiat, mollitia dolor nobis deleniti veniam vitae minus hic sit beatae possimus ratione quam repellat tempora magnam assumenda non nihil.
+    </p> 
+    <p class="color2">
+        Lorem dolores fugiat, mollitia dolor  dolor sit amet consectetur adipisicing elit. Omnis, dolores  veniam vitae minus hic sit beatae possimus ratione quam repellat tempora magnam assumenda non nihil.
+        </p> 
+        <p class="color3">
+              veniam vitae minus hic sit beatae possimus ratione quam repellat tempora magnam assumenda non nihil.
+            </p> 
+            <button id="clicked" onclick="changeDynamic()">Click Me</button>
+
+            <script>
+          function changeDynamic(){
+            document.getElementById("clicked").addEventListener("click", function() {
+              let para1 = document.getElementsByClassName("color1")[0];
+                para1.classList.add("red");
+              let para2 = document.getElementsByClassName("color2")[0];
+                para2.classList.add("green");
+               let para3 = document.getElementsByClassName("color3")[0];
+                para3.classList.add("yellow");
+            });
+          }
+
+            </script>
+</body>
+</html>
