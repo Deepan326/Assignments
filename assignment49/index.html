@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 49</title>
+
+</head>
+<body>
+    <button id="para-btn">Create para</button>
+    <button id="nav-btn">Create Nav</button>
+    <button id="para-strong">Create Strong</button>
+    <script>
+        
+        document.getElementById("para-btn")
+        .addEventListener("click",function(){
+         let newPara= document.createElement("p")
+         newPara.textContent="This is paragraph"
+         document.body.appendChild(newPara);
+        })
+
+        document.getElementById("nav-btn")
+        .addEventListener("click",function(){
+            
+           let newNav1=document.createElement("a")
+           newNav1.href="https://www.google.co.in/";
+           newNav1.textContent="Google";
+           newNav1.style.display = "block";
+
+           let newNav2=document.createElement("a")
+           newNav2.href="https://in.search.yahoo.com/?fr2=inr";
+           newNav2.textContent="Yahoo";
+           newNav2.style.display = "block";
+
+           document.body.appendChild(newNav1);
+           document.body.appendChild(newNav2);
+        })
+
+        document.getElementById("para-strong")
+        .addEventListener("click",function(){
+             let=newStrong=document.createElement("strong")
+            newStrong.textContent="Paragraph with strong"
+            document.body.appendChild(newStrong);
+        })
+
+    </script>
+</body>
+</html>
