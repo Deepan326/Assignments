@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background-color: burlywood;">
+
+    <div class="page-container">
+        <h1>Buy Tickets to the Web Developers Gala</h1>
+        <h3>Tickets are $10 each.Dinner packages are an extra S5.All feilds are required</h3>
+    </div>
+
+    <div class="container">
+        <div class="box1">
+            <fieldset align ="right">
+                <legend>Tickets and Add-ons</legend>
+                <div class="field1">
+                    <label for="ticket">Numbers of Tickets</label>
+                    <span>Limit 8</span>
+                    <input type="text" id="ticket" required />
+                    <br>
+                    <br>
+                    <label for="Dinner">Dinner packages</label>
+                    <span>Serve 2</span>
+                    <input type="text" id="Dinner" />
+                </div>
+            </fieldset>
+        </div>
+        <br>
+    
+        <div class="box2">
+            <fieldset align="right">
+                <legend>Payment</legend>
+                <div class="field2">
+                    <label for="credit">Credit Card Number</label>
+                    <span>No spaces or dashes,please</span>
+                    <input type="number" id="credit" required placeholder="3270000000008" />
+                    <br>
+                    <br>
+                    <label for="Date">Expiration Date</label>
+                    <span>MM/YYYY</span>
+                    <input type="text" id="Date" required placeholder="01/2018" />
+                </div>
+            </fieldset>
+        </div>
+        <br>
+    
+        <div class="box3">
+            <div class="field3">
+                <fieldset align="right">
+                    <legend >Billing Address</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="ex.johnQ.public" />
+                    <br>
+    
+                    <label for="street">Street Address</label>
+                    <input type="text" id="street" placeholder="ex.12345 Main street,Apt 23" />
+                    <br>
+    
+                    <label for="name">City</label>
+                    <input type="text" id="city" placeholder="ex.Anytown" />
+                    <br>
+    
+                    <label for="state">State</label>
+                    <input type="text" id="state" placeholder="CA" />
+                    <br>
+    
+                    <label for="pincode">Pincode</label>
+                    <input type="number" id="pincode" placeholder="12345" />
+                    <br>
+    
+                </fieldset>
+            </div>
+        </div>
+        <button class="button">Buy Tickets</button>
+    </div>
+
+    </form>
+    </div>
+
+</body>
+</html>
