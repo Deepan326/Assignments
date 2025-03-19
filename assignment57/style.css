@@ -1,0 +1,82 @@
+#main-container {
+    display: flex;
+    align-items: center; 
+     gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+li {
+    display: flex;
+    border: 1px solid blue;
+    padding: 8px;
+    color: white;
+    justify-content: center;
+    background-color: blue;
+    cursor: pointer;
+    position: relative; 
+    min-width: 7%;;
+    height: 30px;
+    font-size: larger;
+}
+li:nth-of-type(3n){
+    background-color: rgb(234, 13, 208);
+    border: none;
+}
+#block-display {
+    display: none;
+    background:#f2d9e6;
+    border: 1px solid black;
+    justify-content: center;
+    color: black;
+    position: fixed;
+    align-items: center;
+    width:max-content;
+    height: fit-content;
+    top:50%;
+    left: 40%;  
+}
+#set-remainder:hover #block-display {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.birth-text{
+    color: red;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: medium;
+}
+ #block-display p:first-child{
+    border: 1px solid maroon;
+    background-color:
+    #cc6699;
+    width: 15%;
+    margin-left: 40%;
+    padding: 8px;
+    text-align: center;
+ }
+ #block-display p:nth-child(even){
+    color: red;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: medium;
+ }
+ #block-display p:last-child{
+    color: black;
+    background-color: green;
+    margin-left: 80px;
+    width: max-content;
+    font-size: medium;
+    margin-top:50px;
+    font-weight: bold;
+ }
+.wish-text{
+    color: green;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: small;
+    position: absolute;
+    top:90px;
+}
+
+
