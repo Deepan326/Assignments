@@ -1,0 +1,30 @@
+body{
+   min-height:100vh;
+    background: linear-gradient( #ffff99 ,#ccffcc );
+
+}
+  h1{
+    text-align: center;
+    margin-top: 20px;
+  }
+  span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+   
+    .imgY{
+        transform:skew(0deg,20deg);
+         width: 17%;
+         margin-top: 10%;
+        
+    }
+    .imgX{
+        transform:skew(0deg,-20deg);
+         width: 17%;
+         margin-top: 10%;
+    }
