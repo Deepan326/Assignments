@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 40</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function person(name, exp) {
+            this.name = name;
+            this.exp = exp;
+        }
+        const doctor = new person("Dr.John", "22yrs");
+        const nurse = new person("Marry", "6yrs");
+        person.prototype.patientName = "William";
+
+        console.log(`DocName: ${doctor.name}`);
+        console.log(`DocExperiance: ${doctor.exp}`);
+        console.log(`NurseName: ${nurse.name}`);
+        console.log(`NurseExperiance: ${nurse.exp}`);
+        console.log(`PatientName: ${nurse.patientName}`);
+
+
+    </script>
+</body>
+
+</html>
