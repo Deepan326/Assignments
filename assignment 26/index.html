@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function perimeterIsland(grid) {
+        let perimeter = 0;
+        const rows = grid.length;
+        const cols = grid[0].length;
+      
+        for (let i = 0; i < rows; i++) {
+          for (let j = 0; j < cols; j++) {
+            if (grid[i][j] === 1) {
+              if (i === 0 || grid[i - 1][j] === 0) {
+                perimeter++;
+              }
+              if (i === rows - 1 || grid[i + 1][j] === 0) {
+                perimeter++;
+              }
+              if (j === 0 || grid[i][j - 1] === 0) {
+                perimeter++;
+              }
+              if (j === cols - 1 || grid[i][j + 1] === 0) {
+                perimeter++;
+              }
+            }
+          }
+        }
+
+        return perimeter;
+      }
+    
+      const grid1 = [
+        [0, 1, 0, 0],
+        [1, 1, 1, 0],
+        [0, 1, 0, 0],
+        [1, 1, 0, 0],
+      ];
+      
+      console.log(`The perimeter of island is ${perimeterIsland(grid1)}`); // Output: 16
+      
+    </script>
+</body>
+</html>
